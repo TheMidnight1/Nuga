@@ -33,6 +33,10 @@
     <!-- ********************blog section********************* -->
     @include('home.blog')
 
+    @include('home.slider-2')
+
+
+
 
     <!-- ********************blog section********************* -->
 @endsection

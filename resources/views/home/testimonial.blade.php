@@ -10,7 +10,7 @@
           <div class="testimonial-block">
             <div class="inner-box">
               <div class="image">
-                <img src="{{ asset('image/client-1.webp') }}" alt="Client 1" />
+                <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="Client 1" />
               </div>
               <div class="content">
                 <i class="fas fa-quote-right"></i>
@@ -29,7 +29,7 @@
           <div class="testimonial-block">
             <div class="inner-box">
               <div class="image">
-                <img src="{{ asset('image/client-2.webp') }}" alt="Client 2" />
+                <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="Client 2" />
               </div>
               <div class="content">
                 <i class="fas fa-quote-right"></i>

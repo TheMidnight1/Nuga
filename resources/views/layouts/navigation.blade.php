@@ -20,7 +20,7 @@
               <img src="{{ asset('image/logo-2.webp') }}" alt="Nuga" />
             </div>
             <ul class="col-4 col-lg-7">
-              <li><a href="/index.html">Home</a></li>
+              <li><a href="{{ route('home') }}">Home</a></li>
               <li>
                 <a href="/prod-listing.html">Product</a>&nbsp;<i
                   class="fa-solid fa-angle-down"
@@ -106,7 +106,7 @@
                   </div>
                 </div>
               </li>
-              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="{{ route('contact') }}">Contact</a></li>
             </ul>
           </div>
           <div
@@ -154,7 +154,7 @@
         <nav id="mobileMenu" class="mobile-menu">
           <div class="menu-header">
             <div class="logo-container">
-              <img src="/public/image/logo-2.webp" alt="Nuga" />
+              <img src="{{ asset('image/logo-2.webp') }}" alt="Nuga" />
             </div>
             <div class="close-menu" id="closeMenu">&times;</div>
           </div>

@@ -8,56 +8,72 @@
 
         <div id="new" class="tab-trending-content active row">
           <div class="item col-12 col-md-2">
-            <img src="{{ asset('image/product-1.webp') }}" alt="New Item 1" />
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="New Item 1" />
             <h4>New Item 1</h4>
             <a href="/product-detail.html"><div class="round-btn">View Detail</div></a>
           </div>
           <div class="item col-12 col-md-2">
-            <img src="{{ asset('image/product-2.webp') }}" alt="New Item 2" />
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="New Item 2" />
             <h4>New Item 2</h4>
             <a href="/product-detail.html"><div class="round-btn">View Detail</div></a>
           </div>
           <div class="item col-12 col-md-2">
-            <img src="{{ asset('image/product-3.webp') }}" alt="New Item 3" />
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="New Item 3" />
             <h4>New Item 3</h4>
             <a href="/product-detail.html"><div class="round-btn">View Detail</div></a>
           </div>
           <div class="item col-12 col-md-2">
-            <img src="{{ asset('image/product-4.webp') }}" alt="New Item 4" />
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="New Item 4" />
             <h4>New Item 4</h4>
             <a href="/product-detail.html"><div class="round-btn">View Detail</div></a>
           </div>
         </div>
 
         <div id="sale" class="tab-trending-content">
-          <div class="item">
-            <img src="{{ asset('image/sale-product-1.webp') }}" alt="Sale Item 1" />
-            <h4>Sale Item 1</h4>
-            <div class="round-btn">
-              View Detail
-            </div>
+        <div class="item col-12 col-md-2">
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="New Item 1" />
+            <h4>New Item 1</h4>
+            <a href="/product-detail.html"><div class="round-btn">View Detail</div></a>
           </div>
-          <div class="item">
-            <span class="badge">-20%</span>
-            <img src="{{ asset('image/sale-product-2.webp') }}" alt="Sale Item 2" />
-            <h4>Sale Item 2</h4>
-            <div class="round-btn">
-              View Detail
-            </div>
+          <div class="item col-12 col-md-2">
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="New Item 2" />
+            <h4>New Item 2</h4>
+            <a href="/product-detail.html"><div class="round-btn">View Detail</div></a>
+          </div>
+          <div class="item col-12 col-md-2">
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="New Item 3" />
+            <h4>New Item 3</h4>
+            <a href="/product-detail.html"><div class="round-btn">View Detail</div></a>
+          </div>
+          <div class="item col-12 col-md-2">
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="New Item 4" />
+            <h4>New Item 4</h4>
+            <a href="/product-detail.html"><div class="round-btn">View Detail</div></a>
           </div>
         </div>
 
         <div id="best" class="tab-trending-content">
-          <div class="item">
-            <img src="{{ asset('image/best-product-1.webp') }}" alt="Best Item 1" />
-            <h4>Best Item 1</h4>
-            <div class="round-btn">View Detail</div>
+        <div class="item col-12 col-md-2">
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="New Item 1" />
+            <h4>New Item 1</h4>
+            <a href="/product-detail.html"><div class="round-btn">View Detail</div></a>
           </div>
-          <div class="item">
-            <img src="{{ asset('image/best-product-2.webp') }}" alt="Best Item 2" />
-            <h4>Best Item 2</h4>
-            <div class="round-btn">View Detail</div>
+          <div class="item col-12 col-md-2">
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="New Item 2" />
+            <h4>New Item 2</h4>
+            <a href="/product-detail.html"><div class="round-btn">View Detail</div></a>
           </div>
+          <div class="item col-12 col-md-2">
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="New Item 3" />
+            <h4>New Item 3</h4>
+            <a href="/product-detail.html"><div class="round-btn">View Detail</div></a>
+          </div>
+          <div class="item col-12 col-md-2">
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="New Item 4" />
+            <h4>New Item 4</h4>
+            <a href="/product-detail.html"><div class="round-btn">View Detail</div></a>
+          </div>
+        </div>
         </div>
       </div>
     </section>

@@ -7,26 +7,26 @@
         <div class="item col-12 col-md-2">
           <a href="/product-detail">
           <div class="cat-section-img">
-            <img src="{{ asset('image/category-1.webp') }}" alt="Hemp" />
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="Hemp" />
           </div>
           <div class="name">Hemp</div>
           </a>
         </div>
         <div class="item col-12 col-md-2">
           <div class="cat-section-img">
-            <img src="{{ asset('image/category-2.webp') }}" alt="Hemp" />
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="Hemp" />
           </div>
           <div class="name">Hemp</div>
         </div>
         <div class="item col-12 col-md-2">
           <div class="cat-section-img">
-            <img src="{{ asset('image/category-3.webp') }}" alt="Hemp" />
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="Hemp" />
           </div>
           <div class="name">Hemp</div>
         </div>
         <div class="item col-12 col-md-2">
           <div class="cat-section-img">
-            <img src="{{ asset('image/category-4.webp') }}" alt="Hemp" />
+            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="Hemp" />
           </div>
           <div class="name">Hemp</div>
         </div>
