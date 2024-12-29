@@ -26,7 +26,7 @@ Route::get('/blog-detail', function () {
 
 Route::get('/gallery', function () {
     return view('gallery');
-});
+})->name('gallery');
 
 
 
@@ -35,3 +35,6 @@ Route::get('/contact', function () {
 })->name('contact');
 
 
+Route::get('/about', function () {
+    return view('blog-detail');
+})->name('about');
