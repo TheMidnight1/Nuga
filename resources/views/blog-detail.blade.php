@@ -8,7 +8,7 @@
 @section('content')
     <section class="white-bg">
       <div class="breadcrumbs">
-        <h1 class="title">This is a blog</h1>
+        <!-- <h1 class="title">This is a blog</h1> -->
         <div class="breadcrumbs-contains">
           <ul>
             <li>Home</li>
@@ -19,7 +19,7 @@
       </div>
     </section>
 
-    <section class="white-bg my-2">
+    <!-- <section class="white-bg my-2">
       <div class="blog-detail-section row justify-content-center align-items-center  py-1">
       
         <div class="image-section col12 col-md-6">
@@ -480,7 +480,7 @@
         </ol>
         <p></p>
       </div>
-    </section>
+    </section> -->
 
     <section class="white-bg more-container">
         <div class="title text-center">More Blog</div>

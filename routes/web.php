@@ -38,3 +38,8 @@ Route::get('/contact', function () {
 Route::get('/about', function () {
     return view('blog-detail');
 })->name('about');
+
+
+Route::get('/inquiry', function () {
+    return view('inquiry');
+})->name('inquiry');

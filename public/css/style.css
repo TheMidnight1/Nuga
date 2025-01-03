@@ -1123,3 +1123,23 @@ input::placeholder {
   font-family: "Futura", Arial, Helvetica, sans-serif !important;
 }
 
+@media (max-width: 768px) {
+  .section-header {
+    text-align: center;
+    .testimonials-wrapper .two-item-carousel {
+      margin-top: 20px; /* Ensures spacing between separator and carousel */
+      display: block; /* Positions the carousel as a block element */
+      clear: both; /* Resolves any layout conflicts */
+  }
+}
+
+  .separator {
+    margin-bottom: 20px; /* Add some spacing for clarity */
+  }
+
+  #demo2 {
+    margin-top: 150px; /* Ensure spacing below the separator */
+    display: block; /* Ensures it's positioned properly */
+    clear: both; /* Clears any float issues */
+  }
+}

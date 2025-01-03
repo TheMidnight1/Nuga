@@ -19,7 +19,7 @@
         <div class="logo-container col-lg-3 col-1">
           <img src="{{ asset('image/logo-2.webp') }}" alt="Nuga" />
         </div>
-        <ul class="col-4 col-lg-7">
+        <ul class="col-4 col-lg-7 ">
           <li><a href="{{ route('home') }}">Home</a></li>
           <!-- <li>
             <a href="/prod-listing.html">Product</a>&nbsp;<i
@@ -94,9 +94,9 @@
         class="nav-icons col-3 row align-items-center justify-content-around">
         <ul class="col-8">
           <li class="row">
-            <i class="menu-icon fa-solid fa-magnifying-glass col-2"></i>
+            <!-- <i class="menu-icon fa-solid fa-magnifying-glass col-2"></i> -->
             <div class="inquiry-btn-container col-10">
-              <a href="#">Inquiry Now</a>
+              <a href="{{ route('inquiry') }}">Inquiry Now</a>
             </div>
           </li>
           <!-- <li>
