@@ -93,4 +93,18 @@ class HomeController extends Controller
         $gallery_products = Post::where('is_gallery', true)->paginate(40);
         return view('gallery', compact('gallery_products'));
     }
+
+    public function showCategory($slug)
+    {
+        $posts = Post::whereHas('category', function ($query) use ($slug) {
+            $query->where('slug', $slug);
+        })
+            ->where('is_published', true)
+            ->orderBy('created_at', 'desc')
+            ->paginate(20); 
+    
+        return view('blog-listing', compact('posts', 'slug'));
+    }
+    
+
 }

@@ -23,6 +23,8 @@ Route::get('/product-detail', function () {
 Route::get('/product-listing', function () {
     return view('product-listing');
 });
+Route::get('/category/{slug}', [HomeController::class, 'showCategory'])->name('category.posts');
+
 
 
 Route::get('/blog-listing', function () {
