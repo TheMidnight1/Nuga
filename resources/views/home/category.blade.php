@@ -10,7 +10,7 @@
                     <a href="{{ $post->id ? route('posts.show', $post->id) : '#' }}">
                         <div class="cat-section-img">
                         <img
-              src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.jpg') }}"
+              src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.webp') }}"
               alt="{{ $post->title }}"
               class="w-100 shadow-1-strong rounded" />                        </div>
                         <div class="name">{{ $post->title ?? 'No Title Available' }}</div>

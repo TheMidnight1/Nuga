@@ -12,7 +12,7 @@
         @foreach ($small_sized_products as $post)
           <div class="item col-12 col-md-2">
             <img
-              src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.jpg') }}"
+              src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.webp') }}"
               alt="{{ $post->title }}"
               class="w-100 shadow-1-strong rounded" />
             <h4>{{ $post->title }}</h4>
@@ -30,7 +30,7 @@
         @foreach ($medium_sized_products as $post)
           <div class="item col-12 col-md-2">
             <img
-              src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.jpg') }}"
+              src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.webp') }}"
               alt="{{ $post->title }}"
               class="w-100 shadow-1-strong rounded" />
             <h4>{{ $post->title }}</h4>
@@ -47,7 +47,7 @@
     @foreach($large_sized_products as $post)
         <div class="item col-12 col-md-2">
         <img
-              src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.jpg') }}"
+              src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.webp') }}"
               alt="{{ $post->title }}"
               class="w-100 shadow-1-strong rounded" />
                           <h4>{{ $post->title }}</h4>
