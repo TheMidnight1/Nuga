@@ -21,73 +21,10 @@
         </div>
         <ul class="col-4 col-lg-7 ">
           <li><a href="{{ route('home') }}">Home</a></li>
-          <!-- <li>
-            <a href="/prod-listing.html">Product</a>&nbsp;<i
-              class="fa-solid fa-angle-down"
-              style="font-size: 11px"></i>
-            <div class="dropdown">
-              <ul>
-                <div class="hamburgur-menu">
-                  <div class="row">
-                    <div class="col-3">
-                      <div class="heading-title">
-                        <span class="nav-title"><a href="#" class="fw-semibold">Felt</a></span>
-                        <ul>
-                          <li><a href="#">Small Size</a></li>
-                          <li><a href="#">Medium Size</a></li>
-                          <li><a href="#">Large Size</a></li>
-                          <li><a href="#">Small Size</a></li>
-                          <li><a href="#">Medium Size</a></li>
-                          <li><a href="#">Large Size</a></li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="col-3">
-                      <div class="heading-title">
-                        <span class="nav-title"><a href="#" class="fw-semibold">Hemp</a>
-                        </span>
-                        <ul>
-                          <li><a href="#">Small Size</a></li>
-                          <li><a href="#">Medium Size</a></li>
-                          <li><a href="#">Large Size</a></li>
-                          <li><a href="#">Small Size</a></li>
-                          <li><a href="#">Medium Size</a></li>
-                          <li><a href="#">Large Size</a></li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="col-3">
-                      <div class="heading-title">
-                        <span class="nav-title"><a href="#" class="fw-semibold">Pashmina</a>
-                        </span>
-                        <ul>
-                          <li><a href="#">Small Size</a></li>
-                          <li><a href="#">Medium Size</a></li>
-                          <li><a href="#">Large Size</a></li>
-                          <li><a href="#">Small Size</a></li>
-                          <li><a href="#">Medium Size</a></li>
-                          <li><a href="#">Large Size</a></li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div class="col-3">
-                      <div class="ham-menu-img">
-                        <img
-                          src="/public/image/menu-banner-2.webp"
-                          alt="banner image" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </ul>
-            </div>
-          </li> -->
           <li><a href="{{ route('about') }}">About us</a></li>
-      
           <li><a href="{{ route('contact') }}">Contact</a></li>
+          <li><a href="{{ route('gallery') }}">Gallery</a></li>
+
         </ul>
       </div>
       <div

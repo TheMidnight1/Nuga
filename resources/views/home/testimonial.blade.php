@@ -1,49 +1,43 @@
+
+
+@if(isset($featured_products) && $featured_products->isNotEmpty())
 <section class="testimonials-wrapper white-bg py-3" data-aos="fade-up">
-      <div class="container">
-        <div class="section-header">
-          <div class="tagline">Products</div>
-          <div class="title">Our Featured Products</div>
-          <div class="separator"></div>
-        </div>
-        <div id="demo2" class="two-item-carousel owl-carousel owl-theme">
-          <!--Testimonial Block-->
-          <div class="testimonial-block">
-            <div class="inner-box">
-              <div class="image">
-                <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="Client 1" />
-              </div>
-              <div class="content">
-                <i class="fas fa-quote-right"></i>
-                <div class="author-info">
-                  John Doe <span>/ CEO at Company</span>
-                </div>
-                <div class="summary">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
-                </div>
-              </div>
-            </div>
+  <div class="container">
+    <div class="section-header">
+      <div class="tagline">Products</div>
+      <div class="title">Our Featured Products</div>
+      <div class="separator"></div>
+    </div>
+    <div id="demo2" class="two-item-carousel owl-carousel owl-theme">
+
+
+      @foreach ($featured_products as $post)
+
+      <!--Testimonial Block-->
+      <div class="testimonial-block">
+        <div class="inner-box">
+          <div class="image">
+            <img
+              src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.webp') }}"
+              alt="{{ $post->title }}" />
           </div>
-          <!--Testimonial Block-->
-          <div class="testimonial-block">
-            <div class="inner-box">
-              <div class="image">
-                <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="Client 2" />
-              </div>
-              <div class="content">
-                <i class="fas fa-quote-right"></i>
-                <div class="author-info">
-                  Jane Smith <span>/ Manager at Business</span>
-                </div>
-                <div class="summary">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
-                </div>
-              </div>
+          <div class="content">
+            <i class="fas fa-quote-right"></i>
+            <div class="author-info">
+              {{$post->title}} <span>
+                {{$post->category->name}}
+              </span>
+            </div>
+            <div class="summary">
+              {{$post->description}}
             </div>
           </div>
         </div>
       </div>
-    </section>
+
+
+      @endforeach
+    </div>
+  </div>
+</section>
+@endif

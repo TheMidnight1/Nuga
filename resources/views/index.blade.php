@@ -24,14 +24,17 @@
 ])
 
     <!-- ********************trending section********************* -->
+    @include('home.section-2',['pashmina_products'=>$pashmina_products])
 
     <!-- ********************product by categories********************* -->
-    @include('home.category')
+    @include('home.category',['featured_products'=>$featured_products])
 
     <!-- ********************product by categories********************* -->
 
     <!-- ********************testimonials section********************* -->
     @include('home.testimonial  ')
+
+
 
     <!-- ********************testimonials section********************* -->
 
@@ -40,7 +43,6 @@
 
     @include('home.slider-2')
     @include('home.section-1')
-    @include('home.section-2')
 
 
 

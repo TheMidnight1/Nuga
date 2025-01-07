@@ -42,6 +42,8 @@ class PostController extends Controller
             'is_gallery' => $request->boolean('is_gallery'),
             'slug' => Str::slug($request->title),
             'category_id' => $request->category_id,
+            'is_featured' => $request->boolean('is_featured'),
+
 
         ]);
 
@@ -85,7 +87,9 @@ class PostController extends Controller
             'is_published' => $request->boolean('is_published'),
             'is_gallery' => $request->boolean('is_gallery'),
             'slug' => Str::slug($request->title),
-            'category_id' => $request->category_id
+            'category_id' => $request->category_id,
+            'is_featured' => $request->boolean('is_featured'),
+
         ]);
 
         return redirect()->route('posts.index')->with('success', 'Post updated successfully!');

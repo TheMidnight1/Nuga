@@ -20,7 +20,8 @@ class Post extends Model
         'image',
         'is_published',
         'is_gallery',
-        'category_id'
+        'category_id',
+        'is_featured'
     ];
     public function category()
     {

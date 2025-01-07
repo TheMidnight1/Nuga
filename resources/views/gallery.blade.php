@@ -1,63 +1,34 @@
-@extends('layouts.layout') <!-- Extends the base layout -->
+@extends('layouts.layout')
 
-@section('title', 'Home - Gallery')
+@section('title', 'Gallery')
 
 @section('content')
-<div class="container">
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Gallery</h1>
+
+    <!-- Gallery Grid -->
     <div class="row">
-        <div class="col-md-4 mt-3 col-lg-4">
-            <img src="{{ asset('image/green-150x150.webp') }}" class="img-fluid img-thumbnail clickable-image" alt="image" data-bs-toggle="modal" data-bs-target="#imageModal">
+        @foreach($gallery_products as $post)
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <a href="{{ asset('storage/' . $post->image) }}" data-lightbox="gallery" data-title="{{ $post->title }}">
+
+                <img
+                src="{{ asset('storage/' . $post->image) }}"
+                    alt="{{ $post->title }}"
+                    class="img-fluid rounded shadow-sm">
+            </a>
         </div>
-        <div class="col-md-4 mt-3 col-lg-4">
-            <img src="{{ asset('image/green-150x150.webp') }}" class="img-fluid img-thumbnail clickable-image" alt="image" data-bs-toggle="modal" data-bs-target="#imageModal">
-        </div>
-        <div class="col-md-4 mt-3 col-lg-4">
-            <img src="{{ asset('image/green-150x150.webp') }}" class="img-fluid img-thumbnail clickable-image" alt="image" data-bs-toggle="modal" data-bs-target="#imageModal">
-        </div>
-        <div class="col-md-4 mt-3 col-lg-6">
-            <img src="{{ asset('image/green-150x150.webp') }}" class="img-fluid img-thumbnail clickable-image" alt="image" data-bs-toggle="modal" data-bs-target="#imageModal">
-        </div>
-        <div class="col-md-4 mt-3 col-lg-6">
-            <img src="{{ asset('image/green-150x150.webp') }}" class="img-fluid img-thumbnail clickable-image" alt="image" data-bs-toggle="modal" data-bs-target="#imageModal">
-        </div>
-        <div class="col-md-4 mt-3 col-lg-3">
-            <img src="{{ asset('image/green-150x150.webp') }}" class="img-fluid img-thumbnail clickable-image" alt="image" data-bs-toggle="modal" data-bs-target="#imageModal">
-        </div>
-        <div class="col-md-4 mt-3 col-lg-3">
-            <img src="{{ asset('image/green-150x150.webp') }}" class="img-fluid img-thumbnail clickable-image" alt="image" data-bs-toggle="modal" data-bs-target="#imageModal">
-        </div>
-        <div class="col-md-4 mt-3 col-lg-3">
-            <img src="{{ asset('image/green-150x150.webp') }}" class="img-fluid img-thumbnail clickable-image" alt="image" data-bs-toggle="modal" data-bs-target="#imageModal">
-        </div>
-        <div class="col-md-4 mt-3 col-lg-3">
-            <img src="{{ asset('image/green-150x150.webp') }}" class="img-fluid img-thumbnail clickable-image" alt="image" data-bs-toggle="modal" data-bs-target="#imageModal">
-        </div>
+        @endforeach
+    </div>
+
+    <!-- Pagination -->
+    <div class="d-flex justify-content-center mt-4">
+        {{ $gallery_products->links('pagination::bootstrap-4') }}
     </div>
 </div>
+<!-- Include Lightbox2 CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
 
-<!-- Modal for Image Enlargement -->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-body text-center">
-                <img id="modalImage" src="" class="img-fluid" alt="Enlarged Image">
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
-
-@section('scripts')
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const images = document.querySelectorAll('.clickable-image');
-        const modalImage = document.getElementById('modalImage');
-
-        images.forEach(image => {
-            image.addEventListener('click', function () {
-                modalImage.src = this.getAttribute('src');  
-            });
-        });
-    });
-</script>
+<!-- Include Lightbox2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 @endsection

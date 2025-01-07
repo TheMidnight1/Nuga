@@ -40,6 +40,12 @@
             <input type="checkbox" name="is_gallery" id="is_gallery" class="form-check-input" {{ $post->is_gallery ? 'checked' : '' }}>
             <label class="form-check-label" for="is_gallery">Include in Gallery</label>
         </div>
+
+        <div class="form-check form-switch mb-3">
+            <input type="checkbox" name="is_featured" id="is_featured" class="form-check-input" {{ $post->is_featured ? 'checked' : '' }}>
+            <label class="form-check-label" for="is_featured">Include in Gallery</label>
+        </div>
+
         <button type="submit" class="btn btn-primary w-100">Update Post</button>
     </form>
 </div>

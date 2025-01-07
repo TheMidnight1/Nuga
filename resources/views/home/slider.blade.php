@@ -8,14 +8,7 @@
         <h3 class="text-light">Nuga Production in Action</h3>
       </div>
     </div>
-    <div
-      class="item"
-      style="background-image: url('{{ asset('image/slider-2.jpeg') }}')">
-      <div class="slider-content">
-        <p>Nuga Shop</p>
-        <h1>Slide 2</h1>
-      </div>
-    </div>
+
     <div
       class="item"
       style="background-image: url('{{ asset('image/slider-3.jpeg') }}')">

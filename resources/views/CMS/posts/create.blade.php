@@ -34,6 +34,12 @@
             <input type="checkbox" name="is_gallery" id="is_gallery" class="form-check-input">
             <label class="form-check-label" for="is_gallery">Include in Gallery</label>
         </div>
+
+        <div class="form-check form-switch mb-3">
+            <input type="checkbox" name="is_featured" id="is_featured" class="form-check-input">
+            <label class="form-check-label" for="is_featured">Include in Featured Post</label>
+        </div>
+
         <button type="submit" class="btn btn-primary w-100">Create Post</button>
     </form>
 </div>

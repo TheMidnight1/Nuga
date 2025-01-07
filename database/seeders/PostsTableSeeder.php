@@ -16,6 +16,8 @@ class PostsTableSeeder extends Seeder
             'medium-sized-products' => Category::where('slug', 'medium-sized-products')->first(),
             'large-sized-products' => Category::where('slug', 'large-sized-products')->first(),
             'hemp-bag' => Category::where('slug', 'hemp-bag')->first(),
+            'pashmina-products' => Category::where('slug', 'pashmina-products')->first(),
+
         ];
 
         // Check if categories exist
@@ -165,7 +167,40 @@ class PostsTableSeeder extends Seeder
                 'is_gallery' => false,
                 'category_id' => $categories['hemp-bag']?->id,
             ],
-            // Add 2 more posts for hemp-bag...
+
+            // Pashmina 
+            [
+                'title' => 'Pashmina 1',
+                'content' => 'Description of Pashmina 1',
+                'image' => null,
+                'is_published' => true,
+                'is_gallery' => false,
+                'category_id' => $categories['pashmina-products']?->id,
+            ],
+            [
+                'title' => 'Pashmina 2',
+                'content' => 'Description of Pashmina 2',
+                'image' => null,
+                'is_published' => true,
+                'is_gallery' => false,
+                'category_id' => $categories['pashmina-products']?->id,
+            ],
+            [
+                'title' => 'Pashmina 3',
+                'content' => 'Description of Pashmina 2',
+                'image' => null,
+                'is_published' => true,
+                'is_gallery' => false,
+                'category_id' => $categories['pashmina-products']?->id,
+            ],
+            [
+                'title' => 'Pashmina 4',
+                'content' => 'Description of Pashmina 2',
+                'image' => null,
+                'is_published' => true,
+                'is_gallery' => false,
+                'category_id' => $categories['pashmina-products']?->id,
+            ],
         ];
 
         // Insert posts into the database

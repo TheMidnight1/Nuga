@@ -15,38 +15,82 @@ class HomeController extends Controller
         $small_sized_products = Post::whereHas('category', function ($query) {
             $query->where('slug', 'small-sized-product');
         })
-        ->where('is_published', true)
-        ->orderBy('created_at', 'desc')
-        ->take(4)
-        ->get();
-
+            ->where('is_published', true)
+            ->where('is_featured', false)
+            ->orderBy('created_at', 'desc')
+            ->take(4)
+            ->get();
 
         $medium_sized_products = Post::whereHas('category', function ($query) {
             $query->where('slug', 'medium-sized-products');
         })
-        ->where('is_published', true)
-        ->orderBy('created_at', 'desc')
-        ->take(4)
-        ->get();
+            ->where('is_published', true)
+            ->where('is_featured', false)
+            ->orderBy('created_at', 'desc')
+            ->take(4)
+            ->get();
 
         $large_sized_products = Post::whereHas('category', function ($query) {
             $query->where('slug', 'large-sized-products');
         })
-        ->where('is_published', true)
-        ->orderBy('created_at', 'desc')
-        ->take(4)
-        ->get();
+            ->where('is_published', true)
+            ->where('is_featured', false)
+            ->orderBy('created_at', 'desc')
+            ->take(4)
+            ->get();
 
         $hemp_bags = Post::whereHas('category', function ($query) {
             $query->where('slug', 'hemp-bag');
         })
-        ->where('is_published', true)
-        ->orderBy('created_at', 'desc')
-        ->take(4)
-        ->get();
+            ->where('is_published', true)
+            ->where('is_featured', false)
+            ->orderBy('created_at', 'desc')
+            ->take(4)
+            ->get();
+
+        $pashmina_products = Post::whereHas('category', function ($query) {
+            $query->where('slug', 'pashmina-products');
+        })
+            ->where('is_published', true)
+            ->where('is_featured', false)
+            ->orderBy('created_at', 'desc')
+            ->take(8)
+            ->get();
+
+
+
+        $featured_products = Post::where('is_featured', true)->take(5)->get();
+        $gallery_products = Post::where('is_gallery', true)->take(8)->get();
+
+
+
+        $blog_posts = Post::whereHas('category', function ($query) {
+            $query->where('slug', 'blog');
+        })
+            ->where('is_published', true)
+            ->where('is_featured', false)
+            ->where('is_gallery', false)
+            ->orderBy('created_at', 'desc')
+            ->take(4)
+            ->get();
+
 
 
         // Pass data to the view
-        return view('index', compact('small_sized_products','medium_sized_products','large_sized_products','hemp_bags'));
+        return view('index', compact(
+            'small_sized_products',
+            'medium_sized_products',
+            'large_sized_products',
+            'hemp_bags',
+            'featured_products',
+            'pashmina_products',
+            'blog_posts',
+            'gallery_products'
+        ));
+    }
+    public function galleryPage()
+    {
+        $gallery_products = Post::where('is_gallery', true)->paginate(40);
+        return view('gallery', compact('gallery_products'));
     }
 }

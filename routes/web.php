@@ -33,10 +33,7 @@ Route::get('/blog-listing', function () {
 Route::get('/blog-detail', function () {
     return view('blog-detail');
 });
-
-Route::get('/gallery', function () {
-    return view('gallery');
-})->name('gallery');
+Route::get('/gallery', [HomeController::class, 'galleryPage'])->name('gallery');
 
 
 
