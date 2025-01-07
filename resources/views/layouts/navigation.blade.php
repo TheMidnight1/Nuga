@@ -1,3 +1,31 @@
+<style>
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    list-style: none;
+    z-index: 1000;
+  }
+
+  .dropdown-menu li {
+    margin: 0.5rem 0;
+  }
+
+  .dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .dropdown-menu li a:hover {
+    color: #007bff;
+  }
+</style>
 <!-- ****************Desktop  Navigation**************** -->
 <header class="desktop-navigation">
   <section class="transparent-bg">
@@ -24,6 +52,31 @@
           <li><a href="{{ route('about') }}">About us</a></li>
           <li><a href="{{ route('contact') }}">Contact</a></li>
           <li><a href="{{ route('gallery') }}">Gallery</a></li>
+          <li class="dropdown-parent">
+            <a href="">Products</a>
+            <div class="dropdown">
+              <div class="hamburgur-menu">
+                <ul>
+                  <li><a href="{{route('category.posts','small-sized-product')}}">Small Sized Product</a></li>
+                  <li><a href="{{route('category.posts','medium-sized-products')}}">Medium Sized Product</a></li>
+                  <li><a href="{{route('category.posts','large-sized-products')}}">Large Sized Product</a></li>
+                  <li><a href="{{route('category.posts','hemp-product-catalogue')}}">Hemp Product</a></li>
+                  <li><a href="{{route('category.posts','hemp-bag')}}">Hemp Bag</a></li>
+                  <li><a href="{{route('category.posts','pashmina-products')}}">Pashmina Products</a></li>
+                  <li><a href="{{route('category.posts','woolen-products')}}">Woolen Products</a></li>
+                  <li><a href="{{route('category.posts','woolen-shawl')}}">Woolen Shawal</a></li>
+
+
+
+
+
+                </ul>
+              </div>
+            </div>
+          </li>
+
+
+
 
         </ul>
       </div>

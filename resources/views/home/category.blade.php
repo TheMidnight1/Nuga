@@ -1,6 +1,9 @@
 <div class="white-bg py-3">
     <div class="section-header" data-aos="fade-up">
-        <div class="tagline">Product By Categories</div>
+        <a href="{{route('category.posts','hemp-bag')}}">
+
+            <div class="tagline">Hemp bag</div>
+        </a>
         <div class="title">Making and Crafts</div>
     </div>
     <div class="row justify-content-center cat-section" data-aos="fade-up">

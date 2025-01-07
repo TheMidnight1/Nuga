@@ -102,7 +102,6 @@ class HomeController extends Controller
             ->where('is_published', true)
             ->orderBy('created_at', 'desc')
             ->paginate(20); 
-    
         return view('blog-listing', compact('posts', 'slug'));
     }
     
