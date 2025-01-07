@@ -1,8 +1,8 @@
 <section class="testimonials-wrapper white-bg py-3" data-aos="fade-up">
       <div class="container">
         <div class="section-header">
-          <div class="tagline">Testimonial</div>
-          <div class="title">What Clients Say</div>
+          <div class="tagline">Products</div>
+          <div class="title">Our Featured Products</div>
           <div class="separator"></div>
         </div>
         <div id="demo2" class="two-item-carousel owl-carousel owl-theme">

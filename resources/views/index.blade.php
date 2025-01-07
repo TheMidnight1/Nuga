@@ -16,7 +16,12 @@
     <!-- **************************about section*********************** -->
 
     <!-- ********************trending section********************* -->
-    @include('home.trending')
+    @include('home.trending', [
+    'small_sized_products' => $small_sized_products,
+    'medium_sized_products' => $medium_sized_products,
+    'large_sized_products' => $large_sized_products,
+
+])
 
     <!-- ********************trending section********************* -->
 
@@ -34,6 +39,10 @@
     @include('home.blog')
 
     @include('home.slider-2')
+    @include('home.section-1')
+    @include('home.section-2')
+
+
 
 
 

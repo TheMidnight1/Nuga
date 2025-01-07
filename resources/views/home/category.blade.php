@@ -1,34 +1,26 @@
 <div class="white-bg py-3">
-      <div class="section-header" data-aos="fade-up">
+    <div class="section-header" data-aos="fade-up">
         <div class="tagline">Product By Categories</div>
         <div class="title">Making and Crafts</div>
-      </div>
-      <div class="row justify-content-center cat-section" data-aos="fade-up">
-        <div class="item col-12 col-md-2">
-          <a href="/product-detail">
-          <div class="cat-section-img">
-            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="Hemp" />
-          </div>
-          <div class="name">Hemp</div>
-          </a>
-        </div>
-        <div class="item col-12 col-md-2">
-          <div class="cat-section-img">
-            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="Hemp" />
-          </div>
-          <div class="name">Hemp</div>
-        </div>
-        <div class="item col-12 col-md-2">
-          <div class="cat-section-img">
-            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="Hemp" />
-          </div>
-          <div class="name">Hemp</div>
-        </div>
-        <div class="item col-12 col-md-2">
-          <div class="cat-section-img">
-            <img src="https://imgs.search.brave.com/OKyrO7JmxKJ5u0ShHppLAbn_EAqs0tzDoc1YNG7mb0c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zYWZl/aW1hZ2VraXQuY29t/L2Fzc2V0cy9pbWFn/ZXMvZ3JlZW4uc3Zn" alt="Hemp" />
-          </div>
-          <div class="name">Hemp</div>
-        </div>
-      </div>
     </div>
+    <div class="row justify-content-center cat-section" data-aos="fade-up">
+        @if($hemp_bags && $hemp_bags->isNotEmpty())
+            @foreach($hemp_bags as $post)
+                <div class="item col-12 col-md-2">
+                    <a href="{{ $post->id ? route('posts.show', $post->id) : '#' }}">
+                        <div class="cat-section-img">
+                        <img
+              src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.jpg') }}"
+              alt="{{ $post->title }}"
+              class="w-100 shadow-1-strong rounded" />                        </div>
+                        <div class="name">{{ $post->title ?? 'No Title Available' }}</div>
+                    </a>
+                </div>
+            @endforeach
+        @else
+            <div class="item col-12">
+                <p class="text-center">No products available in this category.</p>
+            </div>
+        @endif
+    </div>
+</div>

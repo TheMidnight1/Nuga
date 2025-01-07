@@ -20,7 +20,7 @@
           <div
             class="about-img d-flex justify-content-center align-items-center p-3"
           >
-            <img src="{{ asset('image/sale-banner.webp') }}" alt="about-us" />
+            <img src="{{ asset('image/Collage-final.png') }}" alt="about-us" />
           </div>
         </div>
       </div>
