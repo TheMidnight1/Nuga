@@ -104,6 +104,14 @@ class HomeController extends Controller
             ->paginate(20); 
         return view('blog-listing', compact('posts', 'slug'));
     }
+
+    public function postDetail($id) {
+        $post = Post::findOrFail($id); 
+        $relatedPosts = Post::where('category_id', $post->category_id)->where('id', '!=', $post->id)->take(4)->get();
+
+        return view('product-detail', compact('post','relatedPosts'));
+    }
+    
     
 
 }

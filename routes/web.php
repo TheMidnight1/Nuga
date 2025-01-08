@@ -14,28 +14,9 @@ use App\Http\Controllers\CategoryController;
 // })->name('home');
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-
-
-Route::get('/product-detail', function () {
-    return view('product-detail');
-});
-
-Route::get('/product-listing', function () {
-    return view('product-listing');
-});
-Route::get('/category/{slug}', [HomeController::class, 'showCategory'])->name('category.posts');
-
-
-
-Route::get('/blog-listing', function () {
-    return view('blog-listing');
-});
-
-
-Route::get('/blog-detail', function () {
-    return view('blog-detail');
-});
 Route::get('/gallery', [HomeController::class, 'galleryPage'])->name('gallery');
+Route::get('/category/{slug}', [HomeController::class, 'showCategory'])->name('category.posts');
+Route::get('/post/{id}',[HomeController::class, 'postDetail'])->name('post.detail');
 
 
 
@@ -71,7 +52,7 @@ Route::middleware('auth')->group(function () {
 
 
 
-    
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');

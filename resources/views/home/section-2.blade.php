@@ -25,7 +25,8 @@
                                                                             {{ $loop->iteration > 3 ? 'd-md-none d-lg-block' : '' }}">
                             <div class="product-card overflow-hidden rounded-4 shadow-sm">
                                 <div class="position-relative h-100">
-                                    <a href="" class="text-decoration-none">
+                                    <a href="{{ route('post.detail', $post->id) }}" class="text-decoration-none">
+
                                         <img src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.webp') }}"
                                             alt="{{ $post->title }}"
                                             class="w-100 h-100 object-fit-cover" />

@@ -10,7 +10,7 @@
         @if($hemp_bags && $hemp_bags->isNotEmpty())
             @foreach($hemp_bags as $post)
                 <div class="item col-12 col-md-2">
-                    <a href="{{ $post->id ? route('posts.show', $post->id) : '#' }}">
+                    <a href="{{ route('post.detail', $post->id) }}">
                         <div class="cat-section-img">
                         <img
               src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.webp') }}"

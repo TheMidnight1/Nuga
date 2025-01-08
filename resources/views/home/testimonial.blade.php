@@ -31,9 +31,17 @@
             <div class="summary">
               {{$post->description}}
             </div>
+            
           </div>
+          <a href="{{ route('post.detail', $post->id) }}" 
+           class="btn btn-primary rounded-circle position-absolute" 
+           style="width: 50px; height: 50px; bottom: 15px; right: 15px; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-arrow-right"></i>
+        </a>
         </div>
+        
       </div>
+      
 
 
       @endforeach
