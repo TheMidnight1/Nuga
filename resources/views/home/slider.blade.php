@@ -5,7 +5,7 @@
       style="background-image: url('{{ asset('image/slider-1.jpeg') }}')">
       <div class="slider-content">
         <p>Empowering Women</p>
-        <h3 class="text-light">Nuga Production in Action</h3>
+        <h1 class="text-light">Nuga Production in Action</h1>
       </div>
     </div>
 

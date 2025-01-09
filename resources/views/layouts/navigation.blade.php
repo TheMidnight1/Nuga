@@ -31,6 +31,9 @@
   <section class="transparent-bg">
     <div class="top-nav">
       <div class="free-deliever">Craft your need with Nuga</div>
+      <!-- Add this section where you want the Download PDF button to appear -->
+
+
       <div class="top-nav-info">
         <ul>
           <li>
@@ -83,14 +86,18 @@
         </ul>
       </div>
       <div
-        class="nav-icons col-3 row align-items-center justify-content-around">
-        <ul class="col-8">
+        class="nav-icons col-4 row align-items-center justify-content-around">
+        <ul class="col-10">
           <li class="row">
             <!-- <i class="menu-icon fa-solid fa-magnifying-glass col-2"></i> -->
             <div class="inquiry-btn-container col-10">
               <a href="{{ route('inquiry') }}">Inquiry Now</a>
             </div>
+            
           </li>
+          
+          <li><a href="{{ asset('file/Sandesh_Ghimire_CV.pdf') }}" download style="padding: 10px 20px; background-color: grey; color: #fff; text-decoration: none; border-radius: 5px; display: inline-block;"><i class="fa-solid fa-download"></i> Download PDF</a></li>
+
           <!-- <li>
                 <i class="menu-icon fa-solid fa-cart-shopping"></i>
                 <div class="shop-tag">
@@ -98,7 +105,9 @@
                 </div>
               </li> -->
         </ul>
+        
       </div>
+      
     </div>
   </section>
 </header>
@@ -227,6 +236,8 @@
           <li><a href="{{ route('gallery') }}">Gallery</a></li>
           <li><a href="{{ route('contact') }}">Contact</a></li>
           <li><a href="{{ route('inquiry') }}">Inquiry</a></li>
+          <li><a href="{{ asset('file/Sandesh_Ghimire_CV.pdf') }}" download style="padding: 10px 20px; background-color: grey; color: #fff; text-decoration: none; border-radius: 5px; display: inline-block;"><i class="fa-solid fa-download"></i> Download PDF</a></li>
+
 
         </ul>
       </nav>
