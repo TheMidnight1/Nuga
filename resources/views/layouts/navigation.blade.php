@@ -52,6 +52,8 @@
           <li><a href="{{ route('about') }}">About us</a></li>
           <li><a href="{{ route('contact') }}">Contact</a></li>
           <li><a href="{{ route('gallery') }}">Gallery</a></li>
+          <!-- <li><a href="{{ route('gallery') }}">Gallery</a></li> -->
+          
           <li class="dropdown-parent">
             <a href="">Products</a>
             <div class="dropdown">
@@ -224,6 +226,8 @@
           <li><a href="{{ route('about') }}">About</a></li>
           <li><a href="{{ route('gallery') }}">Gallery</a></li>
           <li><a href="{{ route('contact') }}">Contact</a></li>
+          <li><a href="{{ route('inquiry') }}">Inquiry</a></li>
+
         </ul>
       </nav>
     </section>

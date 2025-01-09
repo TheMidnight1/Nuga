@@ -504,7 +504,8 @@ section {
   -webkit-transform: translateY(30px);
   -ms-transform: translateY(30px);
   transform: translateY(30px);
-  color: #72a499;
+  /* color: #72a499; */
+  color: #04dbac;
 }
 
 .slider-content h1 {

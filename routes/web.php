@@ -12,7 +12,9 @@ use App\Http\Controllers\CategoryController;
 // Route::get('/', function () {
 //     return view('index');
 // })->name('home');
-
+Route::get('/login', function () {
+    return redirect('/');
+});
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/gallery', [HomeController::class, 'galleryPage'])->name('gallery');
 Route::get('/category/{slug}', [HomeController::class, 'showCategory'])->name('category.posts');
