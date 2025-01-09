@@ -233,7 +233,7 @@ section {
 }
 
 .desktop-navigation .navbar ul li .dropdown ul li a:hover {
-  color: #007BFF; /* Highlight color */
+  color: #72a499; /* Highlight color */
 }
 
 .ham-menu-img {
@@ -1166,4 +1166,8 @@ input::placeholder {
     display: block; /* Ensures it's positioned properly */
     clear: both; /* Clears any float issues */
   }
+}
+
+.desktop-navigation ul li a:hover {
+  color: #72a499;
 }

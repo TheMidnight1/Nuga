@@ -55,7 +55,8 @@
           <!-- <li><a href="{{ route('gallery') }}">Gallery</a></li> -->
           
           <li class="dropdown-parent">
-            <a href="">Products</a>
+            <a href="" class="">Products</a> <i class="fa fa-caret-down" aria-hidden="true"></i>
+
             <div class="dropdown">
               <div class="hamburgur-menu">
                 <ul>

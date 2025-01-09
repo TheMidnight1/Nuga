@@ -3,7 +3,7 @@
 <div class="product-section mb-5">
     <div class="container-fluid px-md-5">
         <!-- Dynamic Header Section -->
-        <div class="text-center mb-4 mb-md-5">
+        <div class="text-center mb-4 mb-md-5 pt-3">
             <h1 class="gallery-title mb-4">
                 Pashmina Collection
             </h1>
