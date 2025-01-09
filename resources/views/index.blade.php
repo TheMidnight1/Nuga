@@ -13,6 +13,8 @@
     <!-- **************************about section*********************** -->
 
     @include('home.about')
+    @include('home.section-1')
+
     <!-- **************************about section*********************** -->
 
     <!-- ********************trending section********************* -->
@@ -42,7 +44,6 @@
     @include('home.blog')
 
     @include('home.slider-2')
-    @include('home.section-1')
 
 
 
