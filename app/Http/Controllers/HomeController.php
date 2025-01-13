@@ -74,6 +74,26 @@ class HomeController extends Controller
             ->take(4)
             ->get();
 
+        $hemp_products = Post::whereHas('category', function ($query) {
+            $query->where('slug', 'hemp-product-catalogue');
+        })
+            ->where('is_published', true)
+            ->where('is_featured', false)
+            ->where('is_gallery', false)
+            ->orderBy('created_at', 'desc')
+            ->take(5)
+            ->get();
+
+        $wollen_products = Post::whereHas('category', function ($query) {
+            $query->where('slug', 'woolen-products');
+        })
+            ->where('is_published', true)
+            ->where('is_featured', false)
+            ->where('is_gallery', false)
+            ->orderBy('created_at', 'desc')
+            ->take(4)
+            ->get();
+
 
 
         // Pass data to the view
@@ -85,7 +105,9 @@ class HomeController extends Controller
             'featured_products',
             'pashmina_products',
             'blog_posts',
-            'gallery_products'
+            'gallery_products',
+            'hemp_products',
+            'wollen_products'
         ));
     }
     public function galleryPage()
@@ -101,17 +123,15 @@ class HomeController extends Controller
         })
             ->where('is_published', true)
             ->orderBy('created_at', 'desc')
-            ->paginate(20); 
+            ->paginate(20);
         return view('blog-listing', compact('posts', 'slug'));
     }
 
-    public function postDetail($id) {
-        $post = Post::findOrFail($id); 
+    public function postDetail($id)
+    {
+        $post = Post::findOrFail($id);
         $relatedPosts = Post::where('category_id', $post->category_id)->where('id', '!=', $post->id)->take(4)->get();
 
-        return view('product-detail', compact('post','relatedPosts'));
+        return view('product-detail', compact('post', 'relatedPosts'));
     }
-    
-    
-
 }

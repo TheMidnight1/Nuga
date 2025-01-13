@@ -1,6 +1,6 @@
 <style>
     .section-container {
-      background-color: #eaf4e4; /* Light green background */
+      background-color: #eaf4e4; 
       padding: 60px 20px;
     }
     .section-title {

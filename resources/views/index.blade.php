@@ -14,6 +14,15 @@
 
     @include('home.about')
     @include('home.section-1')
+    @include('home.section-4')
+    @include('home.section-5')
+    @include('home.section-6')
+
+
+    @include('home.support-local')
+
+    <!-- @include('home.section-3') -->
+
 
     <!-- **************************about section*********************** -->
 

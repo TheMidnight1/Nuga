@@ -32,7 +32,7 @@
                     <div class="title">{{ $post->title }}</div>
                     <div class="summary">{{ Str::limit($post->summary, 100) }}</div>
                 </a>
-                <div class="read-more-btn mb-3"><a href="">Read More</a></div>
+                <div class="read-more-btn mb-3"><a href="">View Detail</a></div>
             </div>
         </div>
         @empty
