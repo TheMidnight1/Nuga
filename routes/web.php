@@ -8,6 +8,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\CategoryController;
 
+use App\Http\Controllers\InquiryController;
 
 // Route::get('/', function () {
 //     return view('index');
@@ -50,14 +51,19 @@ Route::middleware('auth')->group(function () {
     //Category routes
     Route::resource('categories', CategoryController::class);
 
-
-
-
-
-
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+    // Redirect GET requests for /submit-inquiry to the home or form page
+    Route::get('/submit-inquiry', function () {
+        return redirect('/');
+    });
+
+    // Handle POST requests for form submission
+    Route::post('/submit-inquiry', [InquiryController::class, 'submitInquiry'])->name('inquiry.submit');
+
+
 
 require __DIR__ . '/auth.php';
