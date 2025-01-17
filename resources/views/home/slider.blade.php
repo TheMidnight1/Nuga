@@ -1,11 +1,20 @@
 <section class="white-bg pb-2">
   <div class="owl-carousel slider-section owl-theme">
+      
+    <!--      <div-->
+    <!--  class="item"-->
+    <!--  style="background-image: url('{{ asset('image/') }}')">-->
+    <!--  <div class="slider-content">-->
+
+        
+    <!--  </div>-->
+    <!--</div>-->
     <div
       class="item"
       style="background-image: url('{{ asset('image/slider-1.jpeg') }}')">
       <div class="slider-content">
         <p>Empowering Women</p>
-        <h1 class="text-light">Nuga Production in Action</h1>
+        <h1 class="text-light">Nuga Production</h1>
       </div>
     </div>
 
