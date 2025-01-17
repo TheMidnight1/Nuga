@@ -2,7 +2,9 @@
   <div class="container">
     <div class="section-header" data-aos="fade-up">
       <a href="{{ route('category.posts', 'hemp-bag') }}">
-        <div class="tagline text-uppercase text-primary fw-bold mb-2">Hemp Products</div>
+        <div class="tagline">
+          Hemp Products
+        </div>
       </a>
       <h2 class="title fw-bold">Explore Our Hemp Collection</h2>
     </div>

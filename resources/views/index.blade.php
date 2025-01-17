@@ -14,7 +14,20 @@
 
     @include('home.about')
     @include('home.section-1')
+    @include('home.transfering-hemp')
+    @include('home.fiber-craftmanship')
+    @include('home.local-entrepreneurs')
+    @include('home.hemp-and-felt')
+    @include('home.impact')
+    @include('home.journey')
+
+
+
+
+
+
     @include('home.section-4')
+
     @include('home.section-5')
     @include('home.section-6')
 

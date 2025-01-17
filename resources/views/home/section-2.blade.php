@@ -30,9 +30,9 @@
                                         <img src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.webp') }}"
                                             alt="{{ $post->title }}"
                                             class="w-100 h-100 object-fit-cover" />
-                                        <div class="title-overlay position-absolute bottom-0 start-0 w-100 p-3">
+                                        <!-- <div class="title-overlay position-absolute bottom-0 start-0 w-100 p-3">
                                             <h5 class="text-center mb-0 fs-6 fs-md-5 text-dark">{{ $post->title }}</h5>
-                                        </div>
+                                        </div> -->
                                     </a>
                                 </div>
                             </div>

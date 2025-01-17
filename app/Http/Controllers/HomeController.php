@@ -93,8 +93,15 @@ class HomeController extends Controller
             ->orderBy('created_at', 'desc')
             ->take(4)
             ->get();
-
-
+                    $wollen_products = Post::whereHas('category', function ($query) {
+            $query->where('slug', 'woolen-products');
+        })
+            ->where('is_published', true)
+            ->where('is_featured', false)
+            ->where('is_gallery', false)
+            ->orderBy('created_at', 'desc')
+            ->take(4)
+            ->get();
 
         // Pass data to the view
         return view('index', compact(

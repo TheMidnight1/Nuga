@@ -51,7 +51,7 @@
 
    
 
-    <section class="white-bg team-section py-5">
+    <!-- <section class="white-bg team-section py-5">
     <div class="tagline text-center" data-aos="fade-up">Meet Our Team</div>
     <div class="row justify-content-center" data-aos="fade-up">
         <div class="team-member col-12 col-md-3 text-center mb-4">
@@ -70,7 +70,7 @@
             <p>Operations Manager</p>
         </div>
     </div>
-</section>
+</section> -->
 
 <style>
     .team-image {

@@ -37,7 +37,7 @@
             class="img-fluid rounded shadow" />
         </div>
         <!-- Title -->
-        <h5 class="text-center mt-2">{{ $post->title }}</h5>
+        
         <!-- Button -->
         <a href="{{ route('post.detail', $post->id) }}" class="btn btn-primary btn-sm mt-2">
           View Detail
@@ -60,7 +60,7 @@
           class="img-fluid rounded shadow" />
       </div>
       <!-- Title -->
-      <h5 class="text-center mt-2">{{ $post->title }}</h5>
+      
       <!-- Button -->
       <a href="{{ route('post.detail', $post->id) }}" class="btn btn-primary btn-sm mt-2">
         View Detail
