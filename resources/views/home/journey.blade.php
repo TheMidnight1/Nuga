@@ -2,16 +2,13 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="d-flex align-items-center justify-content-center slider-item" style="background-image: url({{asset('image/laxmi.webp')}});">
-        <div class="text-white p-4 bg-dark bg-opacity-50 rounded">
-
-          <!-- <h2>Hemp: A Plant-Based, Vegan Fiber</h2>
-          <p>Hemp is entirely plant-based, making it a vegan-friendly and cruelty-free option. With low environmental impact, it supports sustainable farming and appeals to eco-conscious lifestyles.</p>
-         -->
-         <h1 class="journey-title">Join the Journey</h1>
-                <p class="journey-text">Choosing these items means supporting a healthier lifestyle and a cleaner planet.
-                Your decision to support these products changes lives.
-                Together, we can uplift communities, sustainably. </p>
-
+        <div class="text-white p-4 bg-dark bg-opacity-50 rounded text-center">
+          <h1 class="journey-title mb-3">Join the Journey</h1>
+          <p class="journey-text">
+            Choosing these items means supporting a healthier lifestyle and a cleaner planet.
+            Your decision to support these products changes lives.
+            Together, we can uplift communities, sustainably.
+          </p>
         </div>
       </div>
     </div>
@@ -19,13 +16,14 @@
 </div>
 
 <style>
+  /* General slider styling */
   #artisan-slider {
-    max-height: 75vh; /* Reduce overall slider height */
+    max-height: 75vh;
     overflow: hidden;
   }
 
   .slider-item {
-    height: 65vh; /* Set a specific height for the items */
+    height: 65vh;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -35,28 +33,62 @@
     height: 100%;
   }
 
-  .carousel-item .text-white {
-    max-width: 75%; /* Reduce text container width */
-    font-size: 1rem;
+  /* Typography for text */
+  .journey-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  }
+
+  .journey-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: auto;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   }
 
-  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .slider-item {
+      height: 55vh;
+    }
+
+    .journey-title {
+      font-size: 2rem;
+    }
+
+    .journey-text {
+      font-size: 1rem;
+    }
+  }
 
   @media (max-width: 768px) {
     .slider-item {
-      height: 50vh; /* Adjust height for smaller screens */
+      height: 50vh;
     }
 
-    .carousel-item .text-white {
-      font-size: 0.8rem; /* Adjust font size */
+    .journey-title {
+      font-size: 1.8rem;
+    }
+
+    .journey-text {
+      font-size: 0.9rem;
     }
   }
 
   @media (max-width: 480px) {
-    .carousel-item .text-white {
-      font-size: 0.7rem; /* Smaller text for very small screens */
-      padding: 1rem;
+    .slider-item {
+      height: 45vh;
+    }
+
+    .journey-title {
+      font-size: 1.5rem;
+    }
+
+    .journey-text {
+      font-size: 0.8rem;
+      padding: 0 1rem;
     }
   }
 </style>

@@ -1,27 +1,25 @@
 <section class="white-bg py-2">
-      <div class="row align-items-center">
+    <div class="row align-items-center">
         <div class="left-col col-12 col-lg-6" data-aos="fade-right">
-          <div class="about-card">
-            <div class="title">
-              Nuga is an online shop for handicrafts and arts’ works based in
-              the Nepal.
+            <div class="about-card">
+                <div class="title">
+                    <h2>Hemp: The Fibers of Hope</h2> 
+                </div>
+                <div class="summary">
+                    The trans-Himalayan region provides the perfect environment for
+                    the highest quality of hemp. Local farmers nurture each plant with
+                    care, passing down sustainable techniques from one generation to
+                    the next.
+                </div>
+                <div class="about-btn">
+                    <a href="{{ route('about') }}" class="btn btn-primary">About Us</a>
+                </div>
             </div>
-            <div class="summary">
-              Crafting beautiful stuff with our own hands and the help from
-              useful tools is a wonderful process, where you can enjoy yourself
-              while pulling out some ideas and busy perfecting your work. We
-              provide high-end unique vases, wall arts, home accessories, and
-              furniture pieces.
-            </div>
-            <div class="about-btn"><a href="/static-page.html">About Us</a></div>
-          </div>
         </div>
         <div class="right-col col-12 col-lg-6" data-aos="fade-left">
-          <div
-            class="about-img d-flex justify-content-center align-items-center p-3"
-          >
-            <img src="{{ asset('image/Collage-final.png') }}" alt="about-us" />
-          </div>
+            <div class="about-img d-flex justify-content-center align-items-center p-3">
+                <img src="{{ asset('image/sale-banner.png') }}" alt="about-us" class="img-fluid">
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>

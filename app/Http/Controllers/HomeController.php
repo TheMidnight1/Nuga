@@ -38,6 +38,7 @@ class HomeController extends Controller
             ->orderBy('created_at', 'desc')
             ->take(4)
             ->get();
+            
 
         $hemp_bags = Post::whereHas('category', function ($query) {
             $query->where('slug', 'hemp-bag');

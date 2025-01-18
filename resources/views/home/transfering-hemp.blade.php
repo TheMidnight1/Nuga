@@ -1,3 +1,50 @@
+
+
+<section class="py-5 position-relative">
+    <!-- Decorative Elements -->
+    <div class="decorative-circle circle-1"></div>
+    <div class="decorative-circle circle-2"></div>
+
+    <div class="container py-5">
+        <div class="row align-items-center g-5">
+            <!-- Content Column -->
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="text-center text-lg-start">
+                <h2 class="font-weight-bold mb-3">Crafting Dreams Into Reality</h2>
+                
+                    <p class="summary text-muted">
+                        At the heart of our atelier, creativity flows boundlessly. Each piece is crafted with precision, telling a story of passion and artistic vision.
+                    </p>
+
+                    <p class="summary text-muted">
+                        From skilled hands to innovative minds, every creation is a masterpiece of dedication and craftsmanship.
+                    </p>
+
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-primary">
+                            <span>Discover More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Column -->
+            <div class="col-lg-6 position-relative" data-aos="fade-left">
+                <div class="image-slider">
+                    <div class="slider-container">
+                        <img src="{{ asset('image/laxmi.webp') }}" alt="Slide 1">
+                        <img src="{{ asset('image/dreams-hemp.png') }}" alt="Slide 2">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                    <span class="slider-dot" onclick="changeSlide(0)"></span>
+                    <span class="slider-dot" onclick="changeSlide(1)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <style>
     .image-slider {
         position: relative;
@@ -35,53 +82,6 @@
         background-color: #72a499;
     }
 </style>
-
-<section class="py-5 position-relative">
-    <!-- Decorative Elements -->
-    <div class="decorative-circle circle-1"></div>
-    <div class="decorative-circle circle-2"></div>
-
-    <div class="container py-5">
-        <div class="row align-items-center g-5">
-            <!-- Content Column -->
-            <div class="col-lg-6" data-aos="fade-right">
-                <div class="text-center text-lg-start">
-                    <div class="section-header">
-                        <p class="title">Crafting Dreams Into Reality</p>
-                    </div>
-
-                    <p class="text-secondary">
-                        At the heart of our atelier, creativity flows boundlessly. Each piece is crafted with precision, telling a story of passion and artistic vision.
-                    </p>
-
-                    <p class="text-secondary">
-                        From skilled hands to innovative minds, every creation is a masterpiece of dedication and craftsmanship.
-                    </p>
-
-                    <div class="mt-4">
-                        <a href="#" class="btn btn-primary">
-                            <span>Discover More</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slider Column -->
-            <div class="col-lg-6 position-relative" data-aos="fade-left">
-                <div class="image-slider">
-                    <div class="slider-container">
-                        <img src="{{ asset('image/laxmi.webp') }}" alt="Slide 1">
-                        <img src="{{ asset('image/dreams-hemp.png') }}" alt="Slide 2">
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center mt-3">
-                    <span class="slider-dot" onclick="changeSlide(0)"></span>
-                    <span class="slider-dot" onclick="changeSlide(1)"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <script>
     let currentIndex = 0;

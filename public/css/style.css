@@ -1171,3 +1171,112 @@ input::placeholder {
 .desktop-navigation ul li a:hover {
   color: #72a499;
 }
+
+
+
+
+
+/* Consistent */
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Replace with your preferred font */
+  color: #333; /* Default text color */
+}
+
+/* Headings */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+/* Subtext or Summaries */
+.summary, .text-secondary {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #72a499;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #609a89;
+}
+
+/* Images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.text-lg-start {
+  text-align: left;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+
+
+/* Title */
+ /* Apply the color #72a499 to all section titles */
+ section h1, 
+ section h2, 
+ section h3 {
+   color: #72a499 !important;
+ }
+
+ /* Additional adjustments for visual consistency */
+ section h1 {
+   font-size: 2.5rem; /* Default size for h1 */
+   font-weight: bold;
+ }
+
+ section h2 {
+   font-size: 2rem; /* Default size for h2 */
+   font-weight: bold;
+ }
+
+ section h3 {
+   font-size: 1.8rem; /* Default size for h3 */
+   font-weight: bold;
+ }
+
+ /* Ensure it works on smaller screens */
+ @media (max-width: 768px) {
+   section h1 {
+     font-size: 2rem;
+   }
+   section h2 {
+     font-size: 1.8rem;
+   }
+   section h3 {
+     font-size: 1.6rem;
+   }
+ }
+
+
+
+
+ 
+ 
