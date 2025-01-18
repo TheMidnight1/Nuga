@@ -1279,3 +1279,7 @@ body {
 
  
  
+
+.desktop-navigation .logo-container img, .mobile-navigation .logo-container img {
+  width: 60%;
+}

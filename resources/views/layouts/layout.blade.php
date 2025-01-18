@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Nuga')</title>
-    <link rel="icon" href="asset('image/logo-2.webp')" type="image/webp" />
+    <link rel="icon" href="asset('image/favicon.png')" type="image/png" />
 
     <!-- CSS Files -->
     <link

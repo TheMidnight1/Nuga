@@ -48,7 +48,7 @@
     <div class="navbar row justify-content-between">
       <div class="nav-contains row col-8">
         <div class="logo-container col-lg-3 col-1">
-          <img src="{{ asset('image/logo-2.webp') }}" alt="Nuga" />
+          <img src="{{ asset('image/logo.png') }}" alt="Nuga" />
         </div>
         <ul class="col-4 col-lg-7 ">
           <li><a href="{{ route('home') }}">Home</a></li>
@@ -215,7 +215,7 @@
     <section class="white-bg">
       <div class="navbar row justify-content-between">
         <div class="logo-container col-6">
-          <img src="{{ asset('image/logo-2.webp') }}" alt="Nuga" />
+          <img src="{{ asset('image/logo.png') }}" alt="Nuga" />
         </div>
         <div class="menu-toggle col-4" id="menuToggle">
           <div class="bar"></div>
@@ -227,7 +227,7 @@
       <nav id="mobileMenu" class="mobile-menu">
         <div class="menu-header">
           <div class="logo-container">
-            <img src="{{ asset('image/logo-2.webp') }}" alt="Nuga" />
+            <img src="{{ asset('image/logo.png') }}" alt="Nuga" />
           </div>
           <div class="close-menu" id="closeMenu">&times;</div>
         </div>
