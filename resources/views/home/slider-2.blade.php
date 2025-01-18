@@ -23,7 +23,7 @@
             @endforeach
         </div>
 
-        <div class="text-center mt-4">
+        <div class="text-center mt-4 pb-4">
             <a href="{{ route('gallery') }}" class="btn btn-primary">View More</a>
         </div>
         @else

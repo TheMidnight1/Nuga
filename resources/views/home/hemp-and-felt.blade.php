@@ -1,55 +1,58 @@
-<div id="artisan-slider" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <!-- Slide 1 -->
-    <div class="carousel-item active">
-      <div class="d-flex align-items-center justify-content-center slider-item" 
-           style="background-image: url({{asset('image/hempplant.jpg')}});">
-        <div class="text-white p-4 bg-dark bg-opacity-50 rounded">
-          <h2 class="title mb-3">Hemp: A Plant-Based, Vegan Fiber</h2>
-          <p class="summary">
-            Hemp is entirely plant-based, making it a vegan-friendly and cruelty-free option. With low environmental impact, it supports sustainable farming and appeals to eco-conscious lifestyles.
-          </p>
-        </div>
-      </div>
-    </div>
+<section style="background-color: #e8f5e9;">
 
-    <!-- Slide 2 -->
-    <div class="carousel-item">
-      <div class="d-flex align-items-center justify-content-center slider-item" 
-           style="background-image: url({{asset('image/finalfeltnobg.png')}});">
-        <div class="text-white p-4 bg-dark bg-opacity-50 rounded">
-          <h2 class="title mb-3">Felt Makers: Adding Warmth to Tradition</h2>
-          <p class="summary">
-            Like hemp, woolen felt is made with love and skill. Artisans carefully craft felt decorations, bringing warmth and smiles to families.
-          </p>
+  <div id="artisan-slider" class="carousel slide" data-bs-ride="carousel" >
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="d-flex align-items-center justify-content-center slider-item" 
+             style="background-image: url({{asset('image/hempplant.jpg')}});">
+          <div class="text-white p-4 bg-dark bg-opacity-50 rounded">
+            <h2 class="title mb-3">Hemp: A Plant-Based, Vegan Fiber</h2>
+            <p class="summary">
+              Hemp is entirely plant-based, making it a vegan-friendly and cruelty-free option. With low environmental impact, it supports sustainable farming and appeals to eco-conscious lifestyles.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="d-flex align-items-center justify-content-center slider-item" 
+             style="background-image: url({{asset('image/finalfeltnobg.png')}});">
+          <div class="text-white p-4 bg-dark bg-opacity-50 rounded">
+            <h2 class="title mb-3">Felt Makers: Adding Warmth to Tradition</h2>
+            <p class="summary">
+              Like hemp, woolen felt is made with love and skill. Artisans carefully craft felt decorations, bringing warmth and smiles to families.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="d-flex align-items-center justify-content-center slider-item" 
+             style="background-image: url({{asset('image/feltshoe.jpg')}});">
+          <div class="text-white p-4 bg-dark bg-opacity-50 rounded">
+            <h2 class="title mb-3">From the Hands of Artisans to Yours</h2>
+            <p class="summary">
+              Every product tells a story of a remote village, a determined artisan, and a community's hope for the future. By choosing these items, you bring a part of the Himalayas with you. More than a purchase, it’s a connection.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- Slide 3 -->
-    <div class="carousel-item">
-      <div class="d-flex align-items-center justify-content-center slider-item" 
-           style="background-image: url({{asset('image/feltshoe.jpg')}});">
-        <div class="text-white p-4 bg-dark bg-opacity-50 rounded">
-          <h2 class="title mb-3">From the Hands of Artisans to Yours</h2>
-          <p class="summary">
-            Every product tells a story of a remote village, a determined artisan, and a community's hope for the future. By choosing these items, you bring a part of the Himalayas with you. More than a purchase, it’s a connection.
-          </p>
-        </div>
-      </div>
-    </div>
+  
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#artisan-slider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#artisan-slider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#artisan-slider" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#artisan-slider" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+</section>
 
 <style>
   #artisan-slider {
