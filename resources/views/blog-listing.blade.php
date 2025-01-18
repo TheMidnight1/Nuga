@@ -22,7 +22,7 @@
         @forelse ($posts as $post)
         <div class="items blog-section col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
             <div class="blog-img-container">
-                <a href="#">
+                <a href="{{route('post.detail',$post->id)}}">
                     <img 
                         class="fixed-size-img" 
                         src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.webp') }}" 
@@ -40,7 +40,7 @@
                     <div class="summary">{{ Str::limit($post->summary, 100) }}</div>
                 </a>
                 <div class="read-more-btn mb-3">
-                    <a href="#">View Detail</a>
+                    <a href="{{route('post.detail',$post->id)}}">View Detail</a>
                 </div>
             </div>
         </div>

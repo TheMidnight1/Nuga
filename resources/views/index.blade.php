@@ -3,6 +3,18 @@
  <!-- Sets the title for the page -->
 @section('title', 'Home - Nuga')
 
+<!-- SEO Meta Tags -->
+@section('meta_description', 'Welcome to Nuga, where we celebrate sustainable craftsmanship with hemp-based products and local entrepreneurship.')
+@section('meta_keywords', 'hemp products, sustainable craftsmanship, local entrepreneurs, eco-friendly products, Nuga')
+@section('og_title', 'Home - Nuga')
+@section('og_description', 'Explore sustainable hemp products and craftsmanship at Nuga, supporting local entrepreneurs.')
+@section('og_image', asset('images/logo.png'))
+@section('og_url', url()->current())
+@section('twitter_title', 'Home - Nuga')
+@section('twitter_description', 'Discover sustainable hemp products and local craftsmanship at Nuga.')
+@section('twitter_image', asset('images/logo.png'))
+
+
 @section('content') <!-- Content section starts here -->
     
     <!-- ***************************Slider Section*********************** -->

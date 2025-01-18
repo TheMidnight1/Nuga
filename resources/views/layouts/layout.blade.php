@@ -5,6 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Nuga')</title>
+
+      <!-- SEO Meta Tags -->
+      <title>@yield('title', 'Default Title')</title>
+    <meta name="description" content="@yield('meta_description', 'Default description of your site or page.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'keyword1, keyword2, keyword3')">
+    <meta name="author" content="@yield('meta_author', 'Your Name or Company')">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="@yield('og_title', 'Default OG Title')">
+    <meta property="og:description" content="@yield('og_description', 'Default OG Description')">
+    <meta property="og:image" content="@yield('og_image', asset('images/logo.png'))">
+    <meta property="og:url" content="@yield('og_url', url()->current())">
+    <meta property="og:type" content="@yield('og_type', 'website')">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="@yield('twitter_card', 'summary_large_image')">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Default Twitter Title')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'Default Twitter Description')">
+    <meta name="twitter:image" content="@yield('twitter_image', asset('images/logo.png'))">
+    
     <link rel="icon" href="asset('image/favicon.png')" type="image/png" />
 
     <!-- CSS Files -->
@@ -48,6 +68,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="{{ asset('js/script.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Nuga",
+  "url": "{{ url('/') }}",
+  "description": "Nuga offers hemp-based products and supports local entrepreneurship. Explore sustainable craftsmanship with Nuga's eco-friendly products.",
+  "logo": "{{ asset('images/logo.png') }}",
+  "sameAs": [
+    "https://www.facebook.com/nuga",
+    "https://www.instagram.com/nuga"
+  ]
+}
+</script>
 
 
 </body>

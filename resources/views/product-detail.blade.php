@@ -46,7 +46,7 @@
                 class="img-fluid rounded"
             />
             <h4>{{ $relatedPost->title  }}</h4>
-            <a href="{{ route('posts.show', $post->id) }}">
+            <a href="{{ route('post.detail', $post->id) }}">
               <div class="round-btn">View Detail</div>
             </a>
         </div>
