@@ -1,72 +1,126 @@
-<div class="py-5 wollen-products-section">
-  <div class="container">
-    <div class="text-center mb-5 section-header" data-aos="fade-up">
-      <p class="tagline">Wollen Product</p>
-    </div>
+@foreach($wollen_products->chunk(8) as $index => $chunk)
+@if($chunk->count() > 0)
+<div class="product-section mb-5 white-bg">
+    <div class="container-fluid px-md-5">
+        <!-- Dynamic Header Section -->
+        <div class="section-header text-center mb-4 mb-md-5 pt-3">
+            <h1 class="tagline gallery-title mb-4">
+                Woolen Products
+            </h1>
+            <a href="{{ route('category.posts', 'woolen-products') }}"
+                class="btn btn-outline-dark rounded-pill px-4">
+                View Collection
+            </a>
 
-    <div class="row justify-content-center g-4" data-aos="fade-up">
-      @if($wollen_products->isEmpty())
-      <div class="col-12 text-center">
-        <p class="text-muted fs-5">No products available at the moment.</p>
-      </div>
-      @else
-      @foreach($wollen_products as $product)
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="card border-0 shadow-sm h-100">
-          <a href="{{ route('post.detail', ['id' => $product->id]) }}" class="text-decoration-none">
-            <div class="ratio ratio-1x1 bg-light rounded overflow-hidden">
-              <img
-                src="{{ $product->image && file_exists(public_path('storage/' . $product->image)) ? asset('storage/' . $product->image) : asset('storage/uploads/posts/default.webp') }}"
-                alt="{{ $product->title }}"
-                class="img-fluid w-100 h-100 object-fit-cover">
-            </div>
-            <div class="card-body p-2 text-center">
-              <h3 class="h6 text-dark fw-semibold text-truncate">{{ $product->title }}</h3>
-            </div>
-          </a>
         </div>
-      </div>
-      @endforeach
-      @endif
+
+        <!-- Dynamic Carousel -->
+        <div id="productCarousel{{ $index }}" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                @foreach($chunk->chunk(4) as $carouselChunk)
+                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                    <div class="row g-3 g-md-4">
+                        @foreach($carouselChunk as $post)
+                        <div class="col-6 col-md-4 col-lg-3 {{ $loop->iteration > 2 ? 'd-none d-md-block' : '' }} 
+                                                                            {{ $loop->iteration > 3 ? 'd-md-none d-lg-block' : '' }}">
+                            <div class="product-card overflow-hidden rounded-4 shadow-sm">
+                                <div class="position-relative h-100">
+                                    <a href="{{ route('post.detail', $post->id) }}" class="text-decoration-none">
+
+                                        <img src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.webp') }}"
+                                            alt="{{ $post->title }}"
+                                            class="w-100 h-100 object-fit-cover" />
+                                        <!--<div class="title-overlay position-absolute bottom-0 start-0 w-100 p-3">-->
+                                        <!--    <h5 class="text-center mb-0 fs-6 fs-md-5 text-dark">{{ $post->title }}</h5>-->
+                                        <!--</div>-->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+                @endforeach
+            </div>
+
+            @if($chunk->count() > 4)
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel{{ $index }}" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel{{ $index }}" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            @endif
+        </div>
     </div>
-  </div>
 </div>
+@endif
+@endforeach
 
 <style>
-/* Product Image Styles */
-.object-fit-cover {
-    object-fit: cover;
-}
-
-/* Card Hover Effect */
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Title Styles */
-.card-body h3 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* Responsive Padding Adjustments */
-@media (max-width: 768px) {
-    .py-5 {
-        padding-top: 3rem !important;
-        padding-bottom: 3rem !important;
+    body {
+        background: #f4ede7;
     }
 
-    .display-6 {
-        font-size: 1.75rem;
+    .product-card {
+        aspect-ratio: 1/1;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        background: white;
     }
-}
 
-@media (max-width: 576px) {
-    .display-6 {
-        font-size: 1.5rem;
+    .product-card:hover {
+        transform: scale(1.05);
     }
-}
+
+    .carousel-inner {
+        padding: 1rem 0;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%;
+        opacity: 0.8;
+    }
+
+    .title-overlay {
+        background: rgba(255, 255, 255, 0.9);
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .product-card:hover .title-overlay {
+        transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 10%;
+        }
+
+        .container-fluid {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+    }
+
+    .gallery-title {
+        position: relative;
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+    }
+
+    .gallery-title::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 2px;
+        background: #000;
+    }
 </style>

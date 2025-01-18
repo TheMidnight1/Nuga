@@ -8,7 +8,7 @@
     <div class="container py-5">
         <div class="row align-items-center g-5">
             <!-- Content Column -->
-            <div class="col-lg-6" data-aos="fade-right">
+            <div class="col-lg-6" data-aos="fade-up">
                 <div class="text-center text-lg-start">
                 <h2 class="font-weight-bold mb-3">Crafting Dreams Into Reality</h2>
                 
@@ -29,7 +29,7 @@
             </div>
 
             <!-- Slider Column -->
-            <div class="col-lg-6 position-relative" data-aos="fade-left">
+            <div class="col-lg-6 position-relative" data-aos="fade-up">
                 <div class="image-slider">
                     <div class="slider-container">
                         <img src="{{ asset('image/laxmi.webp') }}" alt="Slide 1">

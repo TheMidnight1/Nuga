@@ -10,6 +10,7 @@
             <thead class="table-dark">
                 <tr>
                     <th>#</th>
+                    <th>Thumbnail</th>
                     <th>Title</th>
                     <th>Content</th>
                     <th>Actions</th>
@@ -19,6 +20,12 @@
                 @foreach($posts as $post)
                     <tr>
                         <td>{{ $post->id }}</td>
+                        <td>
+                            <img src="{{ $post->image ? asset('storage/' . $post->image) : asset('storage/uploads/posts/default.webp') }}" 
+                                 alt="Post Image" 
+                                 class="img-thumbnail" 
+                                 style="width: 60px; height: 60px;">
+                        </td>
                         <td>{{ $post->title }}</td>
                         <td>{{ Str::limit($post->content, 50) }}</td>
                         <td>

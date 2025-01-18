@@ -3,8 +3,8 @@
 <div class="product-section mb-5">
     <div class="container-fluid px-md-5">
         <!-- Dynamic Header Section -->
-        <div class="text-center mb-4 mb-md-5 pt-3">
-            <h1 class="gallery-title mb-4">
+        <div class="section-header text-center mb-4 mb-md-5 pt-3">
+            <h1 class="tagline">
                 Felt Products
             </h1>
             <a href="{{ route('category.posts', 'small-sized-product') }}"

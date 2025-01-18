@@ -6,7 +6,7 @@
           Hemp Products
         </div>
       </a>
-      <h2 class="title fw-bold">Explore Our Hemp Collection</h2>
+      <!--<h2 class="title fw-bold">Explore Our Hemp Collection</h2>-->
     </div>
 
     <div class="row justify-content-center g-4" data-aos="fade-up">

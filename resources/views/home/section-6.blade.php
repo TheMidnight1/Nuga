@@ -49,9 +49,7 @@
                 src="{{ $product->image ? asset('storage/' . $product->image) : asset('storage/uploads/posts/default.webp') }}"
                 alt="{{ $product->title ?? 'Default Title' }}"
                 class="img-fluid w-100 fixed-image" />
-              <figcaption class="prod-info position-absolute bottom-0 start-0 end-0 text-center bg-dark bg-opacity-75 text-white py-2">
-                <span class="name h6">{{ $product->title ?? 'No Title Available' }}</span>
-              </figcaption>
+              
             </figure>
           </a>
         </div>
@@ -71,9 +69,7 @@
               src="{{ $centerpiece->image ? asset('storage/' . $centerpiece->image) : asset('storage/uploads/posts/default.webp') }}"
               alt="{{ $centerpiece->title ?? 'Default Title' }}"
               class="img-fluid w-100 fixed-image" />
-            <figcaption class="prod-info position-absolute bottom-0 start-0 end-0 text-center bg-dark bg-opacity-75 text-white py-3">
-              <span class="name h5">{{ $centerpiece->title ?? 'No Title Available' }}</span>
-            </figcaption>
+            
           </figure>
         </a>
         @endif
@@ -90,9 +86,7 @@
                 src="{{ $product->image ? asset('storage/' . $product->image) : asset('storage/uploads/posts/default.webp') }}"
                 alt="{{ $product->title ?? 'Default Title' }}"
                 class="img-fluid w-100 fixed-image" />
-              <figcaption class="prod-info position-absolute bottom-0 start-0 end-0 text-center bg-dark bg-opacity-75 text-white py-2">
-                <span class="name h6">{{ $product->title ?? 'No Title Available' }}</span>
-              </figcaption>
+             
             </figure>
           </a>
         </div>

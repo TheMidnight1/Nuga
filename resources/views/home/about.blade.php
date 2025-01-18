@@ -1,6 +1,6 @@
 <section class="white-bg py-2">
     <div class="row align-items-center">
-        <div class="left-col col-12 col-lg-6" data-aos="fade-right">
+        <div class="left-col col-12 col-lg-6" data-aos="fade-up">
             <div class="about-card">
                 <div class="title">
                     <h2>Hemp: The Fibers of Hope</h2> 

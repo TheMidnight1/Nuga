@@ -3,7 +3,7 @@
         <a href="{{ route('category.posts', 'hemp-bag') }}">
             <div class="tagline">Hemp Bag</div>
         </a>
-        <div class="title">Making and Crafts</div>
+        <!--<div class="title">Making and Crafts</div>-->
     </div>
     <div class="row justify-content-center cat-section" data-aos="fade-up">
         @if($hemp_bags && $hemp_bags->isNotEmpty())
